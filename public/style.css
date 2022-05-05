@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1.900 & display=trocar");
+
+body {
+  background: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #139ef2;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+ion-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.topo {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.topo img {
+  cursor: pointer;
+}
+
+.topo-mobile {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.topo-mobile img {
+  width: 100px;
+  height: 29px;
+}
+
+.bottom-mobile {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.topo-mobile ion-icon,
+.bottom-mobile ion-icon {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.menu {
+  width: 935px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+.logo {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.barra {
+  background-color: #dbdbdb;
+  width: 1px;
+  height: 20px;
+}
+
+.pesquisa {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bar-pesquisa {
+  width: 215px;
+  height: 25px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.opcoes {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conteudo {
+  width: 935px;
+  height: auto;
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.stories {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  height: 118px;
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 3px;
+  position: relative;
+}
+
+.stories ion-icon {
+  color: #ffffff;
+  position: absolute;
+  right: 10px;
+  filter: drop-shadow(0 0 10px #8e8e8e);
+  z-index: 1;
+}
+
+.stories-box {
+  width: 68px;
+  height: 86px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.stories-box img {
+  width: 66px;
+  height: 66px;
+  position: absolute;
+}
+
+.contas img {
+  width: 56px;
+  height: 56px;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.stories-box h4 {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.posts {
+  width: 614px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.post {
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+
+.posts .post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topo-post {
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+
+.user-box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.post .user-box img {
+  width: 32px;
+  height: 32px;
+  margin-left: 17px;
+}
+
+.post .user-box h3 {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.user-dot {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.post .user-dot p {
+  font-size: 30px;
+  margin-right: 17px;
+  cursor: pointer;
+}
+
+.bot-post {
+  width: 100%;
+  height: 76px;
+}
+
+.box-a,
+.box-d {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.box-b,
+.box-c {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.box-b ion-icon {
+  padding-left: 15px;
+}
+
+.box-c {
+  display: flex;
+  justify-content: right;
+}
+
+.box-c ion-icon {
+  padding-right: 17px;
+}
+
+.post .box-d > img {
+  width: 20px;
+  height: 20px;
+  padding-left: 17px;
+  padding-right: 4px;
+}
+
+.container-sidebar {
+  background-color: cyan;
+  width: 34%;
+  height: 500px;
+  position: fixed;
+  right: 0;
+}
+
+.sidebar {
+  background: #e5e5e5;
+  width: 321px;
+  height: 500px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+
+.user {
+  width: 100%;
+  height: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.user img {
+  padding-left: 17px;
+  padding-right: 17px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.texto {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.texto p {
+  padding-left: 27px;
+  color: #8e8e8e;
+}
+
+.box-users {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  position: relative;
+}
+
+.box-users img {
+  padding-left: 17px;
+  padding-right: 17px;
+  cursor: pointer;
+}
+
+.texto a,
+.box-users a {
+  position: absolute;
+  right: 15px;
+}
+
+.box-users p {
+  color: #8e8e8e;
+}
+
+#copy {
+  font-size: 13px;
+  padding-top: 15px;
+  line-height: 13px;
+  color: #c7c7c7;
+  padding-left: 15px;
+}
+
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .conteudo {
+    justify-content: center;
+  }
+
+  .stories {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 615px) {
+  .topo-mobile {
+    display: none;
+  }
+
+  .bottom-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 614px) {
+  .topo {
+    display: none;
+  }
+
+  .conteudo,
+  .stories,
+  .posts,
+  .post,
+  .user-box,
+  .user-dot {
+    width: 100%;
+  }
+
+  .stories {
+    background: none;
+    border: none;
+    margin-top: 0;
+  }
+
+  .stories ion-icon {
+    display: none;
+  }
+
+  .stories-box img {
+    border-radius: 50px;
+  }
+
+  .post {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .posts .post img {
+    width: 100%;
+    height: auto;
+  }
+
+  .post .user-box img {
+    width: 32px;
+    height: 32px;
+    margin-left: 17px;
+  }
+
+  .post .box-d > img {
+    width: 20px;
+    height: 20px;
+    padding-left: 17px;
+    padding-right: 4px;
+  }
+}
