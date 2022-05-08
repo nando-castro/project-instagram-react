@@ -7,196 +7,239 @@ export default function Conteudo(){
     )
 }
 
+function StoriesItem(props) {
+    return(
+        <div class={props.class}>
+            <img src={props.image} />
+            <div class={props.type}>
+                <img src={props.img} alt={props.alt} />
+            </div>
+            <h4>{props.title}</h4>
+        </div>
+    )
+}
+
+function PostItem(props){
+    return(
+        <div class="post">
+        <div class="topo-post">
+            <div class={props.type}>
+                <img src={props.icon} />
+                <h3><strong>{props.title}</strong></h3>
+            </div>
+            <div class={props.typeDot}>
+                <p>{props.titleDot}</p>
+            </div>
+        </div>
+        <img src={props.image} />
+        <div class="bot-post">
+            <div class="box-a">
+                <div class={props.typeB}>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                </div>
+                <div class={props.typeC}>
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+            </div>
+            <div class={props.typeD}>
+                <img src={props.icone} />
+                <h3>
+                    {props.text}<strong>{props.textb}</strong>{props.textc}
+                    <strong>{props.textd}</strong>
+                </h3>
+            </div>
+        </div>
+        </div>
+    )
+}
+
+function PostVideo(props){
+    return(
+        <div class="post">
+        <div class="topo-post">
+            <div class={props.type}>
+                <img src={props.icon} />
+                <h3><strong>{props.title}</strong></h3>
+            </div>
+            <div class={props.typeDot}>
+                <p>{props.titleDot}</p>
+            </div>
+        </div>
+        <video width="100%" height="auto" autoplay muted loop>
+            <source src={props.videomp4} type={props.typemp4} />
+            <source src={props.videogg} type={props.typeogg} />
+            Your browser does not support HTML video.
+        </video>
+        <div class="bot-post">
+            <div class="box-a">
+                <div class={props.typeB}>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                </div>
+                <div class={props.typeC}>
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+            </div>
+            <div class={props.typeD}>
+                <img src={props.icone} />
+                <h3>
+                    {props.text}<strong>{props.textb}</strong>{props.textc}
+                    <strong>{props.textd}</strong>
+                </h3>
+            </div>
+        </div>
+        </div>
+    )
+}
+
 function Posts(){
     return (
         <div class="posts">
-                <div class="stories">
+            <div class="stories">
                 <ion-icon name="chevron-forward-circle-sharp"></ion-icon>
-                <div class="stories-box">
-                    <img src="images/stories_background.jpg" />
-                    <div class="contas">
-                    <img src="images/9gag.svg" />
-                    </div>
-                    <h4>9gag</h4>
-                </div>
-                <div class="stories-box">
-                    <img src="images/stories_background.jpg" />
-                    <div class="contas">
-                    <img src="images/meowed.svg" />
-                    </div>
-                    <h4>meowed</h4>
-                </div>
-                <div class="stories-box">
-                    <img src="images/stories_background.jpg" />
-                    <div class="contas">
-                    <img src="images/barked.svg" />
-                    </div>
-                    <h4>barked</h4>
-                </div>
-                <div class="stories-box">
-                    <img src="images/stories_background.jpg" />
-                    <div class="contas">
-                    <img src="images/nathanwpylestrangeplanet.svg" />
-                    </div>
-                    <h4>nathanwpyle...</h4>
-                </div>
-                <div class="stories-box">
-                    <img src="images/stories_background.jpg" />
-                    <div class="contas">
-                    <img src="/images/wawawicomics.svg" />
-                    </div>
-                    <h4>wawawiwac...</h4>
-                </div>
-                <div class="stories-box">
-                    <img src="images/stories_background.jpg" />
-                    <div class="contas">
-                    <img src="images/respondeai.svg" />
-                    </div>
-                    <h4>respondeai</h4>
-                </div>
-                <div class="stories-box">
-                    <img src="images/stories_background.jpg" />
-                    <div class="contas">
-                    <img src="images/filomoderna.svg" />
-                    </div>
-                    <h4>filomoderna</h4>
-                </div>
-                <div class="stories-box">
-                    <img src="images/stories_background.jpg" />
-                    <div class="contas">
-                    <img src="images/memeriagourmet.svg" />
-                    </div>
-                    <h4>memeriago.</h4>
-                </div>
-                </div>
-                <div class="post">
-                <div class="topo-post">
-                    <div class="user-box">
-                    <img src="images/respondeai.svg" />
-                    <h3><strong>respondeai</strong></h3>
-                    </div>
-                    <div class="user-dot">
-                    <p>...</p>
-                    </div>
-                </div>
-                <img src="images/bruxo.jpeg" />
-                <div class="bot-post">
-                    <div class="box-a">
-                    <div class="box-b">
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                        <ion-icon name="paper-plane-outline"></ion-icon>
-                    </div>
-                    <div class="box-c">
-                        <ion-icon name="bookmark-outline"></ion-icon>
-                    </div>
-                    </div>
-                    <div class="box-d">
-                    <img src="images/respondeai.svg" />
-                    <h3>
-                        Curtido por <strong>respondeai</strong> e
-                        <strong>outras 599.259 pessoas</strong>
-                    </h3>
-                    </div>
-                </div>
-                </div>
-                <div class="post">
-                <div class="topo-post">
-                    <div class="user-box">
-                    <img src="images/adorable_animals.svg" />
-                    <h3><strong>adorableanimals</strong></h3>
-                    </div>
-                    <div class="user-dot">
-                    <p>...</p>
-                    </div>
-                </div>
-                <video width="100%" height="auto" autoplay muted loop>
-                    <source src="/videos/mov_bbb.mp4" type="video/mp4" />
-                    <source src="/videos/mov_bbb.ogg" type="video/ogg" />
-                    Your browser does not support HTML video.
-                </video>
-                <div class="bot-post">
-                    <div class="box-a">
-                    <div class="box-b">
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                        <ion-icon name="navigate-outline"></ion-icon>
-                    </div>
-                    <div class="box-c">
-                        <ion-icon name="bookmark-outline"></ion-icon>
-                    </div>
-                    </div>
-                    <div class="box-d">
-                    <img src="images/meowed.svg" />
-                    <h3>
-                        Curtido por <strong>meowed</strong> e
-                        <strong>outras 75.499 pessoas</strong>
-                    </h3>
-                    </div>
-                </div>
-                </div>
-                <div class="post">
-                <div class="topo-post">
-                    <div class="user-box">
-                    <img src="images/meowed.svg" />
-                    <h3><strong>meowed</strong></h3>
-                    </div>
-                    <div class="user-dot">
-                    <p>...</p>
-                    </div>
-                </div>
-                <img src="images/gato-telefone.svg" alt="" />
-                <div class="bot-post">
-                    <div class="box-a">
-                    <div class="box-b">
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                        <ion-icon name="paper-plane-outline"></ion-icon>
-                    </div>
-                    <div class="box-c">
-                        <ion-icon name="bookmark-outline"></ion-icon>
-                    </div>
-                    </div>
-                    <div class="box-d">
-                    <img src="images/respondeai.svg" />
-                    <h3>
-                        Curtido por <strong>respondeai</strong> e
-                        <strong>outras01.523 pessoas</strong>
-                    </h3>
-                    </div>
-                </div>
-                </div>
-                <div class="post">
-                <div class="topo-post">
-                    <div class="user-box">
-                    <img src="images/barked.svg" />
-                    <h3><strong>barked</strong></h3>
-                    </div>
-                    <div class="user-dot">
-                    <p>...</p>
-                    </div>
-                </div>
-                <img src="images/dog.svg" />
-                <div class="bot-post">
-                    <div class="box-a">
-                    <div class="box-b">
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                        <ion-icon name="paper-plane-outline"></ion-icon>
-                    </div>
-                    <div class="box-c">
-                        <ion-icon name="bookmark-outline"></ion-icon>
-                    </div>
-                    </div>
-                    <div class="box-d">
-                    <img src="images/adorable_animals.svg" />
-                    <h3>
-                        Curtido por <strong>adorableanimals</strong> e
-                        <strong>outras 99.159 pessoas</strong>
-                    </h3>
-                    </div>
-                </div>
-                </div>
+                <StoriesItem
+                class="stories-box"
+                image="images/stories_background.jpg"
+                alt="image"
+                type="contas"
+                img="images/9gag.svg"
+                title="9gag"
+                />
+                <StoriesItem
+                class="stories-box"
+                image="images/stories_background.jpg"
+                alt="image"
+                type="contas"
+                img="images/meowed.svg"
+                title="meowed"
+                />
+                <StoriesItem
+                class="stories-box"
+                image="images/stories_background.jpg"
+                alt="image"
+                type="contas"
+                img="images/barked.svg"
+                title="barked"
+                />
+                <StoriesItem
+                class="stories-box"
+                image="images/stories_background.jpg"
+                alt="image"
+                type="contas"
+                img="images/nathanwpylestrangeplanet.svg"
+                title="nathanwpyle..."
+                />
+                <StoriesItem
+                class="stories-box"
+                image="images/stories_background.jpg"
+                alt="image"
+                type="contas"
+                img="/images/wawawicomics.svg"
+                title="wawawiwac..."
+                />
+                <StoriesItem
+                class="stories-box"
+                image="images/stories_background.jpg"
+                alt="image"
+                type="contas"
+                img="images/respondeai.svg"
+                title="respondeai"
+                />
+                <StoriesItem
+                class="stories-box"
+                image="images/stories_background.jpg"
+                alt="image"
+                type="contas"
+                img="images/filomoderna.svg"
+                title="filomoderna"
+                />
+                <StoriesItem
+                class="stories-box"
+                image="images/stories_background.jpg"
+                alt="image"
+                type="contas"
+                img="images/memeriagourmet.svg"
+                title="memeriago."
+                />
+            </div>
+                <PostItem 
+                type="user-box"
+                icon="images/respondeai.svg"
+                title="respondeai"
+                typeDot="user-dot"
+                titleDot="..."
+                image="images/bruxo.jpeg"
+                alt="bruxo driven"
+                class="none"
+                typeB="box-b"
+                typeC="box-c"
+                typeD="box-d"
+                icone="images/respondeai.svg"
+                text="Curtido por "
+                textb="respondeai"
+                textc=" e "
+                textd="outras 599.259 pessoas"
+                />       
+                <PostItem 
+                type="user-box"
+                icon="images/meowed.svg"
+                title="meowed"
+                typeDot="user-dot"
+                titleDot="..."
+                image="images/gato-telefone.svg"
+                alt="gato telefone"
+                typeB="box-b"
+                typeC="box-c"
+                typeD="box-d"
+                icone="images/respondeai.svg"
+                text="Curtido por "
+                textb="respondeai"
+                textc=" e "
+                textd="outras 101.523 pessoas"
+                />
+
+                <PostItem 
+                type="user-box"
+                icon="images/barked.svg"
+                title="barked"
+                typeDot="user-dot"
+                titleDot="..."
+                image="images/dog.svg"
+                alt="doguinho"
+                typeB="box-b"
+                typeC="box-c"
+                typeD="box-d"
+                icone="images/adorable_animals.svg"
+                text="Curtido por "
+                textb="respondeai"
+                textc=" e "
+                textd="outras 99.159 pessoas"
+                />
+
+                <PostVideo
+                type="user-box"
+                icon="images/adorable_animals.svg"
+                title="adorableanimals"
+                typeDot="user-dot"
+                titleDot="..."
+                class="video"
+                videomp4="/videos/mov_bbb.mp4"
+                typemp4="video/mp4"
+                videogg="/videos/mov_bbb.ogg"
+                typeogg="video/ogg"
+                typeB="box-b"
+                typeC="box-c"
+                typeD="box-d"
+                icone="images/meowed.svg"
+                text="Curtido por "
+                textb="meowed"
+                textc=" e "
+                textd="outras 75.499 pessoas"
+                />
+
         </div>
     )
 }
