@@ -1,7 +1,15 @@
 export default function Conteudo(){
     return (
         <div class="conteudo">
-            <div class="posts">
+            <Posts />
+            <Sidebar />
+        </div>
+    )
+}
+
+function Posts(){
+    return (
+        <div class="posts">
                 <div class="stories">
                 <ion-icon name="chevron-forward-circle-sharp"></ion-icon>
                 <div class="stories-box">
@@ -189,8 +197,13 @@ export default function Conteudo(){
                     </div>
                 </div>
                 </div>
-            </div>
-            <div class="sidebar">
+        </div>
+    )
+}
+
+function Sidebar(){
+    return(
+        <div class="sidebar">
         <div class="user">
           <img src="images/icon-perfil.png" alt="icon"/>
           <div>
@@ -247,7 +260,6 @@ export default function Conteudo(){
           Localizações • Contas mais relevantes • Hashtags • Idioma
         </p>
         <p id="copy">© 2021 INSTAGRAM DO FACEBOOK</p>
-            </div>
         </div>
     )
 }

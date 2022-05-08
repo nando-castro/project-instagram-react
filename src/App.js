@@ -1,15 +1,13 @@
 import Conteudo from "./Conteudo";
-import FooterMobile from "./FooterMobile";
-import TopoMobile from "./Mobile";
+import Mobile from "./Mobile";
 import Topo from "./Topo";
 
 export default function App() {
     return (
-      <div>
+      <div class="corpo">
         <Topo />
-        <TopoMobile />
         <Conteudo />
-        <FooterMobile />
+        <Mobile />
       </div>
     );
   }
