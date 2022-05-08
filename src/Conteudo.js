@@ -244,60 +244,75 @@ function Posts(){
     )
 }
 
+function User(props){
+    return(
+        <div class="user">
+          <img src={props.image} alt={props.alt}/>
+          <div>
+            <h3><strong>{props.user}</strong></h3>
+            <p>{props.name}</p>
+          </div>
+        </div>
+    )
+}
+
+function BoxUser(props){
+    return(
+        <div class="box-users">
+          <img src={props.image} />
+          <div>
+            <h3><strong>{props.title}</strong></h3>
+            <p>{props.text}</p>
+          </div>
+          <a href={props.url}>Seguir</a>
+        </div>
+    )
+}
+
 function Sidebar(){
     return(
         <div class="sidebar">
-        <div class="user">
-          <img src="images/icon-perfil.png" alt="icon"/>
-          <div>
-            <h3><strong>fernandoh_sousah</strong></h3>
-            <p>Fernando Castro</p>
-          </div>
-        </div>
+        <User
+        image="images/icon-perfil.png"
+        alt="icon"
+        user="fernandoh_sousah"
+        name="Fernando Castro"
+        />
         <div class="texto">
           <p>Sugestões para você</p>
           <a><strong>Ver tudo</strong></a>
         </div>
-        <div class="box-users">
-          <img src="images/bad.vibes.memes.svg" />
-          <div>
-            <h3><strong>bad.vibes.memes</strong></h3>
-            <p>Segue você</p>
-          </div>
-          <a href="#">Seguir</a>
-        </div>
-        <div class="box-users">
-          <img src="images/chibirdart.svg" />
-          <div>
-            <h3><strong>chibirdart</strong></h3>
-            <p>Segue você</p>
-          </div>
-          <a href="#">Seguir</a>
-        </div>
-        <div class="box-users">
-          <img src="images/razoesparaacreditar.svg" />
-          <div>
-            <h3><strong>razoesparaacreditar</strong></h3>
-            <p>Segue você</p>
-          </div>
-          <a href="#">Seguir</a>
-        </div>
-        <div class="box-users">
-          <img src="images/adorable_animals.svg" />
-          <div>
-            <h3><strong>adorable_animals</strong></h3>
-            <p>Segue você</p>
-          </div>
-          <a href="#">Seguir</a>
-        </div>
-        <div class="box-users">
-          <img src="images/smallcutecats.svg" />
-          <div>
-            <h3><strong>smallcutecats</strong></h3>
-            <p>Segue você</p>
-          </div>
-          <a href="#">Seguir</a>
-        </div>
+        <BoxUser 
+        image="images/bad.vibes.memes.svg"
+        title="bad.vibes.memes"
+        text="Segue você"
+        url="#"
+        />
+        <BoxUser 
+        image="images/chibirdart.svg"
+        title="chibirdart"
+        text="Segue você"
+        url="#"
+        />
+        <BoxUser 
+        image="images/razoesparaacreditar.svg"
+        title="razoesparaacreditar"
+        text="Segue você"
+        url="#"
+        />
+        <BoxUser 
+        image="images/adorable_animals.svg"
+        title="adorable_animals"
+        text="Segue você"
+        url="#"
+        />
+        <BoxUser 
+        image="images/smallcutecats.svg"
+        title="smallcutecats"
+        text="Segue você"
+        url="#"
+        />
+
         <p id="copy">
           Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
           Localizações • Contas mais relevantes • Hashtags • Idioma
