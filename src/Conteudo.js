@@ -23,22 +23,16 @@ function StoriesItem(props) {
 
 function PostItem(props){
 
-
+    const [name, setName] = React.useState("heart-outline");
     const [curtir, setCurtir] = React.useState("like");
 
     function Curtir(){
-        if(curtir == "nolike"){
+        if(name === "heart-outline"){
+            setName("heart");
             setCurtir("like");
-        }else{
-            setCurtir("nolike");
-        }
-    }
-
-    function DesLike(){
-        if(curtir == "like"){
-            setCurtir("nolike");
-        }else{
-            setCurtir("like");
+        }else if(name === "heart"){
+            setName("heart-outline");
+            
         }
     }
 
@@ -57,8 +51,8 @@ function PostItem(props){
         <div class="bot-post">
             <div class="box-a">
                 <div class={props.typeB}>
-                    <ion-icon onClick={Curtir} name="heart-outline"></ion-icon>
-                    <ion-icon class={curtir} onClick={Curtir} name="heart"></ion-icon>
+                    
+                    <ion-icon class={curtir} onClick={Curtir} name={name}></ion-icon>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
@@ -79,6 +73,20 @@ function PostItem(props){
 }
 
 function PostVideo(props){
+
+    const [name, setName] = React.useState("heart-outline");
+    const [curtir, setCurtir] = React.useState("like");
+
+    function Curtir(){
+        if(name === "heart-outline"){
+            setName("heart");
+            setCurtir("like");
+        }else if(name === "heart"){
+            setName("heart-outline");
+            
+        }
+    }
+
     return(
         <div class="post">
         <div class="topo-post">
@@ -98,7 +106,7 @@ function PostVideo(props){
         <div class="bot-post">
             <div class="box-a">
                 <div class={props.typeB}>
-                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon class={curtir} onClick={Curtir} name={name}></ion-icon>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>

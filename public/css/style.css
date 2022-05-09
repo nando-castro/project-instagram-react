@@ -388,16 +388,13 @@ ion-icon {
   padding-left: 15px;
 }
 
-.nolike{
-  color: white;
-  position: absolute;
-}
-
 .like{
   color: red;
-  position: absolute;
 }
 
+.nolike{
+  color: #000;
+}
 
 @media (max-width: 935px) {
   .sidebar {
