@@ -37,6 +37,7 @@ ion-icon {
 
 .corpo {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,6 +387,17 @@ ion-icon {
   color: #c7c7c7;
   padding-left: 15px;
 }
+
+.nolike{
+  color: white;
+  position: absolute;
+}
+
+.like{
+  color: red;
+  position: absolute;
+}
+
 
 @media (max-width: 935px) {
   .sidebar {

@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Conteudo(){
     return (
         <div class="conteudo">
@@ -20,6 +22,26 @@ function StoriesItem(props) {
 }
 
 function PostItem(props){
+
+
+    const [curtir, setCurtir] = React.useState("like");
+
+    function Curtir(){
+        if(curtir == "nolike"){
+            setCurtir("like");
+        }else{
+            setCurtir("nolike");
+        }
+    }
+
+    function DesLike(){
+        if(curtir == "like"){
+            setCurtir("nolike");
+        }else{
+            setCurtir("like");
+        }
+    }
+
     return(
         <div class="post">
         <div class="topo-post">
@@ -35,7 +57,8 @@ function PostItem(props){
         <div class="bot-post">
             <div class="box-a">
                 <div class={props.typeB}>
-                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon onClick={Curtir} name="heart-outline"></ion-icon>
+                    <ion-icon class={curtir} onClick={Curtir} name="heart"></ion-icon>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
